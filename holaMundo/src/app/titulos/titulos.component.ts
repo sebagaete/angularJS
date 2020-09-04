@@ -14,9 +14,33 @@ export class TitulosComponent implements OnInit {
     appPaterno : 'Astudillo'
 
   };
+
+  logoCodeStudy : string = 'https://scontent.fscl11-2.fna.fbcdn.net/v/t1.0-9/16387194_1213020415446569_5662279904580820675_n.png?_nc_cat=110&_nc_sid=e3f864&_nc_ohc=hdgDNS9jwO0AX-IRpCe&_nc_ht=scontent.fscl11-2.fna&oh=fa1ec1ef7efc63b54d61c537a7e939d1&oe=5F786B56';
+  inputTxtTitulo : string = '';
+
+  Email : string = '';
+  Password : string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  loginIn(){
+    console.log(this.Email);
+    console.log(this.Password);
+  }
+
+  callDobleClick(){
+    alert ('Ha Realizado Doble Click');
+  }
+
+  changePassword(){
+    console.log(this.Password);
+  }
+
+  escribir(valor:string){
+    console.log(valor);
   }
 
 }
