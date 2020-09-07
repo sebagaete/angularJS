@@ -7,6 +7,9 @@ import { TitulosComponent } from './titulos/titulos.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { Notfound404Component } from './notfound404/notfound404.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { FormularioComponent } from './formulario/formulario.component';
     AppComponent,
     TitulosComponent,
     DirectivaComponent,
-    FormularioComponent
+    FormularioComponent,
+    PipesComponent,
+    Notfound404Component,
+    EncabezadoComponent
   ],
   imports: [
     BrowserModule,
