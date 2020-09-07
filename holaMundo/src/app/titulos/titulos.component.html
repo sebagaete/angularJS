@@ -8,15 +8,15 @@
 
 <input type="text" [(ngModel)] = "inputTxtTitulo">  -->
 
-<!--<label for=""> Correo
+<label for=""> Correo
     <input type="text" [(ngModel)] = "Email">
 </label>
 
 <label for=""> Password
-    <input type="text" (ngModelChange) = "changePassword()" [(ngModel)] = "Password">
+    <input type="text" (ngModelChange) = "changePassword()" (keydown)="loginIn($event)" [(ngModel)] = "Password">
 </label>
 
-<button (dblclick) = "loginIn()">Iniciar</button>
+<!--<button (dblclick) = "loginIn()">Iniciar</button>
 
 <button (dblclick) = "callDobleClick()">Doble Click</button>-->
 
@@ -24,4 +24,9 @@
     
     dblclick controla el doble click en angularJS.  --> 
 
-<input type = "text" (input) = "escribir($event.target.value)">
+<!--<input type = "text" (input) = "escribir($event.target.value)">
+
+<br><br>
+
+
+<input type = "text" (focus) = "focusText($event)">--> 

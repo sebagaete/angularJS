@@ -1,0 +1,25 @@
+<!--<div *ngIf ="cargando == false">
+    <p>Fin de la carga</p>
+</div>
+
+<img *ngIf ="cargando == true" src="https://media1.tenor.com/images/2df94b2cbc32b465b9ec02451f6ffcd9/tenor.gif?itemid=8696160" alt="">-->
+
+<!--<div *ngFor = "let nombre of nombresUser">
+    <p>Hola mi nombre es : {{nombre}}</p>
+</div>-->
+
+
+<div class = "tab" [ngSwitch]="pestana">
+    <button (click)="cambiarPestana('perfil')">Perfil</button>
+    <button (click)="cambiarPestana('puntos')">Puntos</button>
+    <button (click)="cambiarPestana('info')">Info</button>
+
+    <div class = "tabContenido">
+        <p *ngSwitchCase="'perfil'">Este es el perfil</p>
+        <p *ngSwitchCase="'puntos'">Estos son los Puntos</p>
+        <p *ngSwitchCase="'info'">Esta es la info</p>
+        <p *ngSwitchDefault>seleecione una pestana</p>
+    </div>
+</div>
+
+

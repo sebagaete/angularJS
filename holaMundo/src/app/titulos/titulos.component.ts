@@ -26,9 +26,12 @@ export class TitulosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  loginIn(){
-    console.log(this.Email);
-    console.log(this.Password);
+  loginIn(event){
+
+    if(event.key == 'Enter'){
+      console.log(this.Email);
+      console.log(this.Password);
+    }
   }
 
   callDobleClick(){
@@ -41,6 +44,13 @@ export class TitulosComponent implements OnInit {
 
   escribir(valor:string){
     console.log(valor);
+  }
+
+  focusText(event){
+
+    console.log(event);
+    event.srcElement.style.background = "red";
+    event.srcElement.style.width = "200px";
   }
 
 }
